@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".operaciones"
+    android:background="@mipmap/foto1">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete los datos"
+        android:textSize="50dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-3dp"
+        android:background="#238C808B"/>
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ECEDE8"
+        android:ems="10"
+        android:hint="Ingrese un valor"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#EFE9E9"
+        android:ems="10"
+        android:hint="Ingrese un valor"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <CheckBox
+        android:id="@+id/sumar"
+        android:layout_width="139dp"
+        android:layout_height="45dp"
+        android:background="#853B73"
+        android:text="Suma"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <CheckBox
+        android:id="@+id/resta"
+        android:layout_width="152dp"
+        android:layout_height="56dp"
+        android:background="#853B73"
+        android:text="Resta"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <CheckBox
+        android:id="@+id/multi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#853B73"
+        android:text="Multiplicacion"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="363dp" />
+
+    <CheckBox
+        android:id="@+id/divi"
+        android:layout_width="126dp"
+        android:layout_height="47dp"
+        android:background="#853B73"
+        android:text="Divicion"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="372dp" />
+
+    <Button
+        android:id="@+id/Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="453dp"
+        android:backgroundTint="#120C0C"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="660dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

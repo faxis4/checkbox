@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@mipmap/foto1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="360dp"
+        android:layout_height="51dp"
+        android:background="#238C808B"
+        android:gravity="center"
+        android:text="Bienvenido"
+        android:textSize="40dp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <Button
+        android:id="@+id/btn_opciones"
+        android:onClick="Opciones"
+        android:layout_width="183dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#595353"
+        android:text="Opciones"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_operaciones2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <Button
+        android:id="@+id/btn_operaciones2"
+        android:onClick="Operaciones"
+        android:layout_width="194dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="52dp"
+        android:background="#5D3D3D"
+        android:text="operaciones"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_opciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.132"
+        app:rippleColor="#8A5992"
+        app:strokeColor="#947272" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
