@@ -28,16 +28,19 @@ RatingBar barraEstrella;
         if (view.getId() == R.id.btnValidar);
         validar();
     }
-    private void validar(){
-        String cad = "Selecionado: \n";
+private void validar(){
+        String seleccion = "Seleccionado: ";
         if (c1.isChecked()){
-            cad += " Gato\n ";
-        } if (c1.isChecked()) {
-            cad += " Perro\n ";
-
+            seleccion += "Perro, ";
+        }
+        if (c2.isChecked()){
+            seleccion += "Gato, ";
+        }
+        if (seleccion.equals("Seleccionado: ")){
+            seleccion = "No seleccionaste ningún animal. ";
         }
         float calificacion = barraEstrella.getRating();
-        cad += "Calificacion; " +calificacion + "Estrella";
+        String cad = seleccion + "Calificación: " + calificacion + " estrellas";
         Toast.makeText(getApplicationContext(),cad, Toast.LENGTH_SHORT).show();
     }
 }
