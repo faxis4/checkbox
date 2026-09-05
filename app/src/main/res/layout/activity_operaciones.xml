@@ -10,86 +10,126 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Complete los datos"
-        android:textSize="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#238C808B"
         android:gravity="center"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-3dp"
-        android:background="#238C808B"/>
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Complete los datos"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
         android:background="#ECEDE8"
         android:ems="10"
         android:hint="Ingrese un valor"
         android:inputType="text"
-        tools:layout_editor_absoluteX="79dp"
-        tools:layout_editor_absoluteY="147dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
         android:id="@+id/et2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
         android:background="#EFE9E9"
         android:ems="10"
         android:hint="Ingrese un valor"
         android:inputType="text"
-        tools:layout_editor_absoluteX="79dp"
-        tools:layout_editor_absoluteY="190dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et1" />
 
     <CheckBox
         android:id="@+id/sumar"
-        android:layout_width="139dp"
-        android:layout_height="45dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:background="#853B73"
+        android:gravity="center"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
         android:text="Suma"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="273dp" />
+        app:layout_constraintEnd_toStartOf="@+id/resta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2" />
 
     <CheckBox
         android:id="@+id/resta"
-        android:layout_width="152dp"
-        android:layout_height="56dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:background="#853B73"
+        android:gravity="center"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
         android:text="Resta"
-        tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="273dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sumar"
+        app:layout_constraintTop_toBottomOf="@+id/et2" />
 
     <CheckBox
         android:id="@+id/multi"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:background="#853B73"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
         android:text="Multiplicacion"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="363dp" />
+        app:layout_constraintEnd_toStartOf="@+id/divi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sumar" />
 
     <CheckBox
         android:id="@+id/divi"
-        android:layout_width="126dp"
-        android:layout_height="47dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:background="#853B73"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
         android:text="Divicion"
-        tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="372dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/multi"
+        app:layout_constraintTop_toBottomOf="@+id/sumar" />
 
     <Button
         android:id="@+id/Calcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#120C0C"
         android:text="Calcular"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="453dp"
-        android:backgroundTint="#120C0C"/>
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multi" />
 
     <RatingBar
         android:id="@+id/ratingBar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="660dp" />
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calcular" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
